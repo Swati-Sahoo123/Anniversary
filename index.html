@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Anniversary ❤️🥰😘</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+<script>
+  // Confetti burst when popup closes
+  function hidePopup() {
+    document.getElementById("popup").style.display = "none";
+
+    confetti({
+      particleCount: 200,
+      spread: 100,
+      origin: { y: 0.6 }
+    });
+  }
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+<script>
+  confetti({
+    particleCount: 150,
+    spread: 100,
+    origin: { y: 0.6 }
+  });
+</script>
+
+<button onclick="startConfetti()">Celebrate!</button>
+
+<script>
+  function startConfetti() {
+    confetti({
+      particleCount: 200,
+      spread: 160
+    });
+  }
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+<script>
+  document.addEventListener('click', () => {
+    confetti({
+      particleCount: 100,
+      spread: 70,
+      origin: { y: 0.6 }
+    });
+  });
+</script>
+
+
+
+  <!-- <button onclick="startConfetti()">Celebrate!</button>
+
+  function startConfetti() {
+    confetti({
+      particleCount: 200,
+      spread: 160
+    });
+  }
+
+  
+  document.addEventListener('click', () => {
+    confetti({
+      particleCount: 100,
+      spread: 70,
+      origin: { y: 0.6 }
+    });
+  });
+
+  const colors = ['red', 'blue', 'green', 'yellow', 'pink', 'purple'];
+  for (let i = 0; i < 20; i++) {
+    let balloon = document.createElement("div");
+    balloon.classList.add("balloon");
+    balloon.style.left = `${Math.random() * 100}%`;
+    balloon.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+    balloon.style.width = "30px";
+    balloon.style.height = "40px";
+    balloon.style.borderRadius = "50%";
+    balloon.style.position = "fixed";
+    document.body.appendChild(balloon);
+  }
+</script> -->
+
+
+<body onload="startCelebration()">
+  <div class="popup" id="popup">
+    <div class="popup-content">
+      <h2>❤️💗 Happy Anniversary Baba And Mama ❤️💓</h2>
+      <p>You both are so special for me, and today is all about yours 😘😘🥰🥰.....  Love You Mama And Baba ❤️❤️</p>
+      <button onclick="hidePopup()">Let's Celebrate</button>
+      <div style="text-align: center; margin-top: 20px;">
+  <img src="https://media.giphy.com/media/9Pz3DOudJ6L2qBzPlc/giphy.gif?cid=ecf05e47p9digytt0bgsbk3slbfqlajqp2w8byfpdk9okrrl&ep=v1_gifs_related&rid=giphy.gif&ct=g" alt="Cake Cutting" width="200">
+  <p>Let’s cut the cake!</p>
+</div>
+
+    </div>
+  </div>
+
+  <div class="banner">🎉🌸 Happy Anniversary Both of You 🎉💫</div>
+
+  <div class="container fade-in">
+    <h1>🎂 Wishing Both of You Love , Joy And Laughter!🎈🎊</h1>        
+    <video controls="" src="Anniversary Video.mp4" width="350" height="400" style="display: block; margin-left: auto; margin-right: auto;"></video>
+
+    <p>
+      You both are my inspiration, my heroes. With my Mama and Baba by my side, I have everything I need to conquer the world. My Mama and Baba are not just my parents; they are my best friends and confidants. The love between a child and their parents is unbreakable 💓💗.  Love you so much Mama and Baba 😘😘.  You Both are always stay happy and keep smile. 🥳🥳🥰🥰😍😍
+    </p>
+    <audio controls autoplay loop>
+      <source src="Audio.mp3" type="audio/mp3" />
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+
+  <div class="balloons">
+    <div class="balloon red"></div>
+    <div class="balloon blue"></div>
+    <div class="balloon green"></div>
+    <div class="balloon yellow"></div>
+
+  </div>
+
+  <canvas id="fireworks"></canvas>
+
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script>
+    function hidePopup() {
+      document.getElementById("popup").style.display = "none";
+      burstConfetti();
+    }
+
+    function burstConfetti() {
+      confetti({
+        particleCount: 200,
+        spread: 100,
+        origin: { y: 0.6 }
+      });
+    }
+
+    function startCelebration() {
+      document.getElementById("popup").style.display = "flex";
+
+      setInterval(() => {
+        confetti({
+          particleCount: 100,
+          spread: 70,
+          origin: { y: Math.random() * 0.5 }
+        });
+      }, 3000);
+    }
+  </script>
+</body>
+</html>
